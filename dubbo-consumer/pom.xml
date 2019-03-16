@@ -75,6 +75,19 @@
 			<version>2.9.2</version>
 		</dependency>
 
+		<!-- swagger2 增强UI -->
+		<dependency>
+			<groupId>com.github.xiaoymin</groupId>
+			<artifactId>swagger-bootstrap-ui</artifactId>
+			<version>1.9.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<!--热部署不被子项目所继承,既就是不向下进行传递 -->
+			<optional>true</optional>
+		</dependency>
 	</dependencies>
 
 	<build>
