@@ -10,6 +10,9 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 
 
+/**
+ * @author baimingxu
+ */
 @Configuration
 public class Swagger2Config {
 
@@ -25,8 +28,8 @@ public class Swagger2Config {
 	
 	private ApiInfo apiInfo() {
 		return new ApiInfoBuilder()
-				.title("springboot利用swagger2构建api文档")
-				.description("简单优雅的Restfun风格")
+				.title("Spring Boot利用Swagger2构建接口文档")
+				.description("简单优雅的Restful风格")
 				.termsOfServiceUrl("测试")
 				.version("1.0")
 				.build();
