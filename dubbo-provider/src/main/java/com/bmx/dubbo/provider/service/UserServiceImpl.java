@@ -57,7 +57,7 @@ public class UserServiceImpl implements UserService {
 
         User user = null;
 
-        //判断是否在redis缓存中获取到用户信息
+        //判断是否在redis缓存中获取到指定id的用户信息
         if (!StringUtils.isEmpty(json)) {
             user = objectMapper.readValue(json, User.class);
         } else {
