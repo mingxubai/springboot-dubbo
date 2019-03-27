@@ -15,14 +15,14 @@ public interface UserMapper {
 
     /**
      * 查询用户列表
-     * @return
+     * @return List<User>
      */
     List<User> findAll();
 
     /**
      * 根据id查询用户详情
      * @param id
-     * @return
+     * @return User
      */
     @Select("select * from user where id = ${id}")
     User findUserById(Integer id);
