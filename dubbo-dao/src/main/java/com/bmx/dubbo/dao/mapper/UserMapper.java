@@ -24,6 +24,6 @@ public interface UserMapper {
      * @param id
      * @return User
      */
-    @Select("select * from user where id = ${id}")
+    @Select("select * from user where id = #{id}")
     User findUserById(Integer id);
 }
